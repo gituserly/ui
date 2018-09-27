@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0019da6d-c416-4f2f-ad5d-c9f713da0a79" name="Default" comment="">
-      <change type="DELETED" beforePath="G:\ui\.idea\.name" afterPath="" />
-      <change type="DELETED" beforePath="G:\ui\.idea\encodings.xml" afterPath="" />
-      <change type="DELETED" beforePath="G:\ui\.idea\first.iml" afterPath="" />
-      <change type="DELETED" beforePath="G:\ui\.idea\misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="G:\ui\.idea\modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="G:\ui\.idea\vcs.xml" afterPath="" />
-      <change type="DELETED" beforePath="G:\ui\.idea\workspace.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/Controller/UserController.class.php" afterPath="$PROJECT_DIR$/Application/Home/Controller/UserController.class.php" />
     </list>
     <ignored path="ui.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,7 +28,7 @@
       <file leaf-file-name="UserController.class.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Application/Home/Controller/UserController.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="1" selection-start="457" selection-end="457" vertical-scroll-proportion="0.6049822" vertical-offset="0" max-vertical-offset="843">
+            <state line="22" column="8" selection-start="469" selection-end="469" vertical-scroll-proportion="0.6049822" vertical-offset="0" max-vertical-offset="843">
               <folding />
             </state>
           </provider>
@@ -49,6 +43,13 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/Application/Home/Controller/UserController.class.php" />
+      </list>
+    </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
@@ -219,7 +220,7 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Application/Home/Controller/UserController.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="1" selection-start="457" selection-end="457" vertical-scroll-proportion="0.6049822" vertical-offset="0" max-vertical-offset="843">
+        <state line="22" column="8" selection-start="469" selection-end="469" vertical-scroll-proportion="0.6049822" vertical-offset="0" max-vertical-offset="843">
           <folding />
         </state>
       </provider>

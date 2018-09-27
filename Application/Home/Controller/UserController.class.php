@@ -18,6 +18,10 @@ class UserController extends  Controller{
     }
     //
     //2.修改一个用户信息，可以修用户的名字、号码、email
+    public function  updateUserItem(){
+
+        
+    }
     //3.获取一个用户的信息
     //4.删除一个用户记录
 }
