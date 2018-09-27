@@ -1,0 +1,24 @@
+[ 2018-09-23T08:48:52+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000611s ]
+ERR: 无法加载模块:Favicon
+
+[ 2018-09-23T11:08:43+08:00 ] 127.0.0.1 /index.php/Fopen/fopen
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008372s ]
+ERR: 无法加载模块:Fopen
+
+[ 2018-09-23T11:15:47+08:00 ] 127.0.0.1 /index.php/Hoopenme/Fopopenen/fopenkjk
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000704s ]
+ERR: 无法加载模块:Hoopenme
+
+[ 2018-09-23T15:03:14+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000755s ]
+ERR: 无法加载模块:Favicon
+
