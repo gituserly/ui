@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/Application/Home/Controller/UserController.class.php" line="93" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="0019da6d-c416-4f2f-ad5d-c9f713da0a79" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/0_error_log" afterPath="$PROJECT_DIR$/log/0_error_log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Logs/Home/18_09_28.log" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Home/18_09_28.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/Controller/UserController.class.php" afterPath="$PROJECT_DIR$/Application/Home/Controller/UserController.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/Model/UserModel.class.php" afterPath="$PROJECT_DIR$/Application/Home/Model/UserModel.class.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ui.iws" />
@@ -31,16 +34,16 @@
       <file leaf-file-name="UserController.class.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Application/Home/Controller/UserController.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="38" selection-start="1342" selection-end="1342" vertical-scroll-proportion="-0.2455516" vertical-offset="1557" max-vertical-offset="2670">
+            <state line="107" column="42" selection-start="2799" selection-end="2799" vertical-scroll-proportion="0.74733096" vertical-offset="2430" max-vertical-offset="3750">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MeiuiTagController.class.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Application/Home/Controller/MeiuiTagController.class.php">
+      <file leaf-file-name="TagController.class.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Application/Home/Controller/TagController.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="44" selection-start="1726" selection-end="1726" vertical-scroll-proportion="-3.9230769" vertical-offset="1377" max-vertical-offset="3120">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="43.0" vertical-offset="1677" max-vertical-offset="2520">
               <folding />
             </state>
           </provider>
@@ -290,13 +293,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Home/Controller/MeiuiTagController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="44" selection-start="1726" selection-end="1726" vertical-scroll-proportion="-3.9230769" vertical-offset="1377" max-vertical-offset="3120">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Application/Home/Model/BookModel.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="882">
@@ -311,9 +307,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/Controller/MeiuiTagController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="44" selection-start="1726" selection-end="1726" vertical-scroll-proportion="0.18149467" vertical-offset="1377" max-vertical-offset="3120">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/Controller/TagController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="43.0" vertical-offset="1677" max-vertical-offset="2520">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Application/Home/Controller/UserController.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="38" selection-start="1342" selection-end="1342" vertical-scroll-proportion="-0.2455516" vertical-offset="1557" max-vertical-offset="2670">
+        <state line="107" column="42" selection-start="2799" selection-end="2799" vertical-scroll-proportion="0.74733096" vertical-offset="2430" max-vertical-offset="3750">
           <folding />
         </state>
       </provider>

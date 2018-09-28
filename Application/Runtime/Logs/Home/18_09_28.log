@@ -1300,3 +1300,197 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000680s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000784s ]
 
+[ 2018-09-28T18:56:41+08:00 ] 127.0.0.1 /index.php/Home/User/updateUserItem?nickname=yun&phone=15523645128&email=good&id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000464s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000787s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000942s ]
+SQL: SHOW COLUMNS FROM `meiui_user` [ RunTime:0.0022s ]
+SQL: UPDATE `meiui_user` SET `id`='3',`nickname`='yun',`phone`='15523645128',`email`='good' WHERE ( id=3 ) [ RunTime:0.0004s ]
+SQL: SELECT * FROM `meiui_user` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000689s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000797s ]
+
+[ 2018-09-28T19:02:27+08:00 ] 127.0.0.1 /index.php/Home/User/updateUserItem?id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000445s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000880s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001105s ]
+NOTIC: [8] Undefined index: nickname G:\ui\Application\Home\Controller\UserController.class.php 第 45 行.
+NOTIC: [8] Undefined index: phone G:\ui\Application\Home\Controller\UserController.class.php 第 46 行.
+NOTIC: [8] Undefined index: email G:\ui\Application\Home\Controller\UserController.class.php 第 47 行.
+SQL: SHOW COLUMNS FROM `meiui_user` [ RunTime:0.0022s ]
+SQL: UPDATE `meiui_user` SET `id`='3',`nickname`=NULL,`phone`=NULL,`email`=NULL WHERE ( id=3 ) [ RunTime:0.0520s ]
+SQL: SELECT * FROM `meiui_user` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000889s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001066s ]
+
+[ 2018-09-28T19:02:30+08:00 ] 127.0.0.1 /index.php/Home/User/updateUserItem?id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000511s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001342s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001797s ]
+NOTIC: [8] Undefined index: nickname G:\ui\Application\Home\Controller\UserController.class.php 第 45 行.
+NOTIC: [8] Undefined index: phone G:\ui\Application\Home\Controller\UserController.class.php 第 46 行.
+NOTIC: [8] Undefined index: email G:\ui\Application\Home\Controller\UserController.class.php 第 47 行.
+SQL: SHOW COLUMNS FROM `meiui_user` [ RunTime:0.0028s ]
+SQL: UPDATE `meiui_user` SET `id`='3',`nickname`=NULL,`phone`=NULL,`email`=NULL WHERE ( id=3 ) [ RunTime:0.0003s ]
+SQL: SELECT * FROM `meiui_user` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000779s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000928s ]
+
+[ 2018-09-28T19:02:39+08:00 ] 127.0.0.1 /index.php/Home/User/updateUserItem?id=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000430s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000601s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000780s ]
+NOTIC: [8] Undefined index: nickname G:\ui\Application\Home\Controller\UserController.class.php 第 45 行.
+NOTIC: [8] Undefined index: phone G:\ui\Application\Home\Controller\UserController.class.php 第 46 行.
+NOTIC: [8] Undefined index: email G:\ui\Application\Home\Controller\UserController.class.php 第 47 行.
+NOTIC: [8] Undefined index: user_id G:\ui\Application\Home\Controller\LogTool.class.php 第 12 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000483s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000652s ]
+
+[ 2018-09-28T19:02:41+08:00 ] 127.0.0.1 /index.php/Home/User/updateUserItem?id=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000377s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000525s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000647s ]
+NOTIC: [8] Undefined index: nickname G:\ui\Application\Home\Controller\UserController.class.php 第 45 行.
+NOTIC: [8] Undefined index: phone G:\ui\Application\Home\Controller\UserController.class.php 第 46 行.
+NOTIC: [8] Undefined index: email G:\ui\Application\Home\Controller\UserController.class.php 第 47 行.
+NOTIC: [8] Undefined index: user_id G:\ui\Application\Home\Controller\LogTool.class.php 第 12 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000588s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000749s ]
+
+[ 2018-09-28T19:03:00+08:00 ] 127.0.0.1 /index.php/Home/User/getUserItem?id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000417s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000508s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000694s ]
+ERR: 非法操作:getUserItem
+
+[ 2018-09-28T19:03:10+08:00 ] 127.0.0.1 /index.php/Home/User/getUserItem?id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000381s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000523s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000664s ]
+ERR: 非法操作:getUserItem
+
+[ 2018-09-28T19:03:11+08:00 ] 127.0.0.1 /index.php/Home/User/getUserItem?id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000385s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000450s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000563s ]
+ERR: 非法操作:getUserItem
+
+[ 2018-09-28T19:03:53+08:00 ] 127.0.0.1 /index.php/Home/User/getUserItem?id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000388s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001422s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001856s ]
+ERR: 非法操作:getUserItem
+
+[ 2018-09-28T19:03:56+08:00 ] 127.0.0.1 /index.php/Home/User/getUserItem?id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000515s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000595s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000754s ]
+ERR: 非法操作:getUserItem
+
+[ 2018-09-28T19:03:57+08:00 ] 127.0.0.1 /index.php/Home/User/getUserItem?id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001531s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001380s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001691s ]
+ERR: 非法操作:getUserItem
+
+[ 2018-09-28T19:04:29+08:00 ] 127.0.0.1 /index.php/Home/User/getUserItem?id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000445s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000773s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000891s ]
+ERR: 非法操作:getUserItem
+
+[ 2018-09-28T19:06:12+08:00 ] 127.0.0.1 /index.php/Home/User/getUserItem?id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000428s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000704s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001010s ]
+SQL: SHOW COLUMNS FROM `meiui_user` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `meiui_user` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000802s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000944s ]
+
+[ 2018-09-28T19:06:20+08:00 ] 127.0.0.1 /index.php/Home/User/getUserItem?id=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000111s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001556s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000473s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000588s ]
+NOTIC: [8] Undefined index: user_id G:\ui\Application\Home\Controller\LogTool.class.php 第 12 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000482s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000589s ]
+
+[ 2018-09-28T19:06:26+08:00 ] 127.0.0.1 /index.php/Home/User/getUserItem?id=111111
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000395s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000459s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000573s ]
+SQL: SHOW COLUMNS FROM `meiui_user` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `meiui_user` WHERE ( id=111111 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: user_id G:\ui\Application\Home\Controller\LogTool.class.php 第 12 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000506s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000615s ]
+
+[ 2018-09-28T19:09:39+08:00 ] 127.0.0.1 /index.php/Home/User/dropUserItem?id=111111
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000440s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000651s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000792s ]
+SQL: SHOW COLUMNS FROM `meiui_user` [ RunTime:0.0022s ]
+SQL: DELETE FROM `meiui_user` WHERE ( id=111111 ) [ RunTime:0.1041s ]
+NOTIC: [8] Undefined index: user_id G:\ui\Application\Home\Controller\LogTool.class.php 第 12 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000917s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001110s ]
+

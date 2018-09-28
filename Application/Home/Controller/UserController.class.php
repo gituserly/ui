@@ -71,8 +71,44 @@ class UserController extends  Controller{
 
 
     //3.获取一个用户的信息
+    public  function getUserItem(){
+        $id=$_GET['id'];
+        if($id){
+            $meiui_user=M('meiui_user');
+            $list=$meiui_user->where("id=$id")->find();
+            if($list){
+                $this->outData($list);
+            }
+            else{
+                $this->outData('',-21,'没有id的参数');
+                LogTool::write_log('没有id的参数');
+            }
+        }
+        else{
+            $this->outData('',-22,'缺少id');
+            LogTool::write_log('缺少id');
+        }
+    }
 
     //4.删除一个用户记录
+    public  function  dropUserItem(){
+        $id=$_GET['id'];
+        if($id){
+            $meiui_user=M('meiui_user');
+            $list=$meiui_user->where("id=$id")->delete();
+            if($list){
+                $this->outData($list);
+            }
+            else{
+                $this->outData('',-31,'没有id的参数');
+                LogTool::write_log('没有id的参数');
+            }
+        }
+        else{
+            $this->outData('',-32,'缺少id');
+            LogTool::write_log('缺少id');
+        }
+    }
 
     public static  function outData($content, $error_code = 200, $msg = 'success' ){
         $out_data = array(
