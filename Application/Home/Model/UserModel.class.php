@@ -9,5 +9,5 @@ namespace Home\model;
 use Think\model;
 class UserModel extends  Model
 {
-    protected  $tableName = 'user';
+    protected  $tableName = 'meiui_user';
 }
