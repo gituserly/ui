@@ -1,0 +1,445 @@
+[ 2018-09-29T21:04:39+08:00 ] 127.0.0.1 /index.php/Home/MeiuiTag/getTagItem?tag_id=5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000165s ]
+INFO: [ app_init ] --END-- [ RunTime:0.505606s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.116415s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.116557s ]
+SQL: SHOW COLUMNS FROM `meiui_tag` [ RunTime:0.2604s ]
+SQL: SELECT * FROM `meiui_tag` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.4883s ]
+
+[ 2018-09-29T21:05:12+08:00 ] 127.0.0.1 /index.php/Home/User/dropUserItem?id=111111
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000568s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000661s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000814s ]
+SQL: SHOW COLUMNS FROM `meiui_user` [ RunTime:0.2271s ]
+SQL: DELETE FROM `meiui_user` WHERE ( id=111111 ) [ RunTime:0.6860s ]
+NOTIC: [8] Undefined index: user_id G:\ui\Application\Home\Controller\LogTool.class.php 第 12 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005840s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006018s ]
+
+[ 2018-09-29T21:05:33+08:00 ] 127.0.0.1 /index.php/Home/User/updateUserItem?nickname=yun&phone=15523645128&email=good&id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000641s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000929s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001177s ]
+SQL: SHOW COLUMNS FROM `meiui_user` [ RunTime:0.0037s ]
+SQL: UPDATE `meiui_user` SET `id`='3',`nickname`='yun',`phone`='15523645128',`email`='good' WHERE ( id=3 ) [ RunTime:0.3189s ]
+SQL: SELECT * FROM `meiui_user` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000642s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000746s ]
+
+[ 2018-09-29T21:06:20+08:00 ] 127.0.0.1 /index.php/Home/User/insertUserItem?nickname=yun&user_pic=sky&password=k&phone=15523645128&email=good&username=lsys
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000390s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000917s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001247s ]
+SQL: SHOW COLUMNS FROM `meiui_user` [ RunTime:0.0022s ]
+ERR: 1062:Duplicate entry 'lsys' for key 'username'
+ [ SQL语句 ] : INSERT INTO `meiui_user` (`username`,`nickname`,`user_pic`,`phone`,`password`,`email`) VALUES ('lsys','yun','sky','15523645128','k','good')
+ERR: 1062:Duplicate entry 'lsys' for key 'username'
+ [ SQL语句 ] : INSERT INTO `meiui_user` (`username`,`nickname`,`user_pic`,`phone`,`password`,`email`) VALUES ('lsys','yun','sky','15523645128','k','good')
+
+[ 2018-09-29T21:06:26+08:00 ] 127.0.0.1 /index.php/Home/User/insertUserItem?nickname=yun&user_pic=sky&password=k&phone=15523645128&email=good&username=lsyss
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001542s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001822s ]
+SQL: SHOW COLUMNS FROM `meiui_user` [ RunTime:0.0020s ]
+SQL: INSERT INTO `meiui_user` (`username`,`nickname`,`user_pic`,`phone`,`password`,`email`) VALUES ('lsyss','yun','sky','15523645128','k','good') [ RunTime:0.0003s ]
+SQL: SELECT * FROM `meiui_user` WHERE ( id=17 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000559s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000689s ]
+
+[ 2018-09-29T21:18:12+08:00 ] 127.0.0.1 /index.php/Home/MeiuiTag/getTagItem?tag_id=5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000523s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000661s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000891s ]
+SQL: SHOW COLUMNS FROM `meiui_tag` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `meiui_tag` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2018-09-29T21:18:34+08:00 ] 127.0.0.1 /index.php/Home/Tag/getTag
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000883s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000762s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000953s ]
+ERR: 非法操作:getTag
+
+[ 2018-09-29T21:18:45+08:00 ] 127.0.0.1 /index.php/Home/Tag/tag
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000534s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000598s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000764s ]
+SQL: SHOW COLUMNS FROM `meiui_tag` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `meiui_tag` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: validate G:\ui\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto G:\ui\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [8] Undefined index: validate G:\ui\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto G:\ui\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT * FROM `meiui_tag` WHERE ( tag_type=2 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `meiui_tag` WHERE ( tag_type=2 ) ORDER BY create_time LIMIT 3   [ RunTime:0.0315s ]
+SQL: SELECT `id` FROM `meiui_tag`  [ RunTime:0.0056s ]
+SQL: SELECT `id` FROM `meiui_tag` LIMIT 3   [ RunTime:0.0001s ]
+SQL: SELECT `id`,`tag_type` FROM `meiui_tag`  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`tag_type`,`create_user` FROM `meiui_tag`  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`tag_type`,`create_user` FROM `meiui_tag`  [ RunTime:0.0003s ]
+SQL: UPDATE `meiui_tag` SET `id`='5',`tag_name`='good',`create_user`='8',`create_time`='1453362801',`tag_type`='6',`using_flag`='1' WHERE ( id=5 ) [ RunTime:0.0056s ]
+SQL: UPDATE `meiui_tag` SET `tag_type`='5' WHERE ( id=1 ) [ RunTime:0.0002s ]
+SQL: DELETE FROM `meiui_tag` WHERE ( id=2 ) [ RunTime:0.0001s ]
+SQL: DELETE FROM `meiui_tag` WHERE `id` IN ('1','2','5') [ RunTime:0.0172s ]
+SQL: DELETE FROM `meiui_tag` WHERE ( id=0 ) ORDER BY create_time LIMIT 5  [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000784s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000909s ]
+
+[ 2018-09-29T21:19:37+08:00 ] 127.0.0.1 /index.php/Home/Tag/tag
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000387s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000438s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000551s ]
+SQL: SHOW COLUMNS FROM `meiui_tag` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `meiui_tag` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2018-09-29T21:20:36+08:00 ] 127.0.0.1 /index.php/Home/Tag/tag
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000506s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000642s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000784s ]
+ERR: 1146:Table 'ui.tag' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tag`
+ERR: 1146:Table 'ui.tag' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tag`
+
+[ 2018-09-29T21:22:02+08:00 ] 127.0.0.1 /index.php/Home/Tag/tag
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000455s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000491s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000626s ]
+SQL: SHOW COLUMNS FROM `meiui_tag` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `meiui_tag` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2018-09-29T21:23:56+08:00 ] 127.0.0.1 /index.php/Home/MeiuiTag/getTagItem?tag_id=5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000477s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000569s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000687s ]
+SQL: SHOW COLUMNS FROM `meiui_tag` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `meiui_tag` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-09-29T21:24:25+08:00 ] 127.0.0.1 /index.php/Home/MeiuiTag/getTagItem?tag_id=5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000578s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001060s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001321s ]
+SQL: SHOW COLUMNS FROM `meiui_tag` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `meiui_tag` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-09-29T21:24:57+08:00 ] 127.0.0.1 /index.php/Home/MeiuiTag/getTagItem?tag_id=5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000639s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000670s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000870s ]
+SQL: SHOW COLUMNS FROM `meiui_tag` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `meiui_tag` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-09-29T21:25:34+08:00 ] 127.0.0.1 /index.php/Home/MeiuiTag/getTagItem?tag_id=5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000577s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000744s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000949s ]
+ERR: 1146:Table 'shuliang.meiui_tag' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `meiui_tag`
+ERR: 1146:Table 'shuliang.meiui_tag' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `meiui_tag`
+
+[ 2018-09-29T21:26:01+08:00 ] 127.0.0.1 /index.php/Home/MeiuiTag/getTagItem?tag_id=5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000767s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001072s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001307s ]
+SQL: SHOW COLUMNS FROM `meiui_tag` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `meiui_tag` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2018-09-29T21:26:23+08:00 ] 127.0.0.1 /index.php/Home/MeiuiTag/getTagItem?tag_id=5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000799s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000634s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000801s ]
+SQL: SHOW COLUMNS FROM `meiui_tag` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `meiui_tag` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-09-29T21:27:44+08:00 ] 127.0.0.1 /index.php/Home/MeiuiTag/getTagItem?tag_id=5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000613s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002025s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002366s ]
+SQL: SHOW COLUMNS FROM `meiui_tag` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `meiui_tag` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-09-29T21:27:46+08:00 ] 127.0.0.1 /index.php/Home/MeiuiTag/getTagItem?tag_id=5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000713s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001246s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001464s ]
+SQL: SHOW COLUMNS FROM `meiui_tag` [ RunTime:0.0077s ]
+SQL: SELECT * FROM `meiui_tag` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-09-29T21:27:54+08:00 ] 127.0.0.1 /index.php/Home/MeiuiTag/getTagItem?tag_id=52
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000246s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001039s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000768s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000970s ]
+SQL: SHOW COLUMNS FROM `meiui_tag` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `meiui_tag` WHERE ( id=52 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-09-29T21:27:56+08:00 ] 127.0.0.1 /index.php/Home/MeiuiTag/getTagItem?tag_id=52
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000383s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000476s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000630s ]
+SQL: SHOW COLUMNS FROM `meiui_tag` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `meiui_tag` WHERE ( id=52 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-09-29T21:28:01+08:00 ] 127.0.0.1 /index.php/Home/MeiuiTag/getTagItem?tag_id=11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000379s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000517s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000639s ]
+SQL: SHOW COLUMNS FROM `meiui_tag` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `meiui_tag` WHERE ( id=11 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-09-29T21:28:05+08:00 ] 127.0.0.1 /index.php/Home/MeiuiTag/getTagItem?tag_id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000445s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000547s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000662s ]
+SQL: SHOW COLUMNS FROM `meiui_tag` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `meiui_tag` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-09-29T21:28:06+08:00 ] 127.0.0.1 /index.php/Home/MeiuiTag/getTagItem?tag_id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000388s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000450s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000576s ]
+SQL: SHOW COLUMNS FROM `meiui_tag` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `meiui_tag` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-09-29T21:28:52+08:00 ] 127.0.0.1 /index.php/Home/MeiuiTag/getTagItem?tag_id=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000509s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001841s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002563s ]
+SQL: SHOW COLUMNS FROM `meiui_tag` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `meiui_tag` WHERE ( id=10 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-09-29T21:29:38+08:00 ] 127.0.0.1 /index.php/Home/MeiuiTag/getTagItem?tag_id=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000530s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000608s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000770s ]
+SQL: SHOW COLUMNS FROM `meiui_tag` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `meiui_tag` WHERE ( id=10 ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2018-09-29T21:29:40+08:00 ] 127.0.0.1 /index.php/Home/MeiuiTag/getTagItem?tag_id=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001023s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000715s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000884s ]
+SQL: SHOW COLUMNS FROM `meiui_tag` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `meiui_tag` WHERE ( id=10 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-09-29T21:29:56+08:00 ] 127.0.0.1 /index.php/Home/MeiuiTag/getTagItem?tag_id=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000604s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000464s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000581s ]
+ERR: 1146:Table 'ui.meiuiag' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `meiuiag`
+ERR: 1146:Table 'ui.meiuiag' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `meiuiag`
+
+[ 2018-09-29T21:30:12+08:00 ] 127.0.0.1 /index.php/Home/MeiuiTag/getTagItem?tag_id=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000630s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000802s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000995s ]
+SQL: SHOW COLUMNS FROM `meiui_tag` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `meiui_tag` WHERE ( id=10 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-09-29T21:30:49+08:00 ] 127.0.0.1 /index.php/Home/Tag/tag
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000398s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000447s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000562s ]
+SQL: SHOW COLUMNS FROM `meiui_tag` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `meiui_tag` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: validate G:\ui\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto G:\ui\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [8] Undefined index: validate G:\ui\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto G:\ui\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT * FROM `meiui_tag` WHERE ( tag_type=2 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `meiui_tag` WHERE ( tag_type=2 ) ORDER BY create_time LIMIT 3   [ RunTime:0.0003s ]
+SQL: SELECT `id` FROM `meiui_tag`  [ RunTime:0.0003s ]
+SQL: SELECT `id` FROM `meiui_tag` LIMIT 3   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`tag_type` FROM `meiui_tag`  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`tag_type`,`create_user` FROM `meiui_tag`  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`tag_type`,`create_user` FROM `meiui_tag`  [ RunTime:0.0003s ]
+SQL: UPDATE `meiui_tag` SET `id`='5',`tag_name`='good',`create_user`='8',`create_time`='1453362801',`tag_type`='6',`using_flag`='1' WHERE ( id=5 ) [ RunTime:0.0005s ]
+SQL: UPDATE `meiui_tag` SET `tag_type`='5' WHERE ( id=1 ) [ RunTime:0.0002s ]
+SQL: DELETE FROM `meiui_tag` WHERE ( id=2 ) [ RunTime:0.0001s ]
+SQL: DELETE FROM `meiui_tag` WHERE `id` IN ('1','2','5') [ RunTime:0.0001s ]
+SQL: DELETE FROM `meiui_tag` WHERE ( id=0 ) ORDER BY create_time LIMIT 5  [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000700s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000802s ]
+
+[ 2018-09-29T21:32:05+08:00 ] 127.0.0.1 /index.php/Home/Tag/tag
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000552s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000591s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000755s ]
+SQL: SHOW COLUMNS FROM `meiui_tag` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `meiui_tag` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: validate G:\ui\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto G:\ui\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [8] Undefined index: validate G:\ui\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto G:\ui\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT * FROM `meiui_tag` WHERE ( tag_type=2 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `meiui_tag` WHERE ( tag_type=2 ) ORDER BY create_time LIMIT 3   [ RunTime:0.0003s ]
+SQL: SELECT `id` FROM `meiui_tag`  [ RunTime:0.0003s ]
+SQL: SELECT `id` FROM `meiui_tag` LIMIT 3   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`tag_type` FROM `meiui_tag`  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`tag_type`,`create_user` FROM `meiui_tag`  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`tag_type`,`create_user` FROM `meiui_tag`  [ RunTime:0.0003s ]
+SQL: UPDATE `meiui_tag` SET `id`='5',`tag_name`='good',`create_user`='8',`create_time`='1453362801',`tag_type`='6',`using_flag`='1' WHERE ( id=5 ) [ RunTime:0.0002s ]
+SQL: UPDATE `meiui_tag` SET `tag_type`='5' WHERE ( id=1 ) [ RunTime:0.0001s ]
+SQL: DELETE FROM `meiui_tag` WHERE ( id=2 ) [ RunTime:0.0002s ]
+SQL: DELETE FROM `meiui_tag` WHERE `id` IN ('1','2','5') [ RunTime:0.0002s ]
+SQL: DELETE FROM `meiui_tag` WHERE ( id=0 ) ORDER BY create_time LIMIT 5  [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001393s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001898s ]
+
+[ 2018-09-29T21:34:09+08:00 ] 127.0.0.1 /index.php/Home/Tag/tag
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000560s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000578s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000708s ]
+SQL: SHOW COLUMNS FROM `meiui_tag` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `meiui_tag` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: validate G:\ui\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto G:\ui\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [8] Undefined index: validate G:\ui\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto G:\ui\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT * FROM `meiui_tag` WHERE ( tag_type=2 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `meiui_tag` WHERE ( tag_type=2 ) ORDER BY create_time LIMIT 3   [ RunTime:0.0003s ]
+SQL: SELECT `id` FROM `meiui_tag`  [ RunTime:0.0003s ]
+SQL: SELECT `id` FROM `meiui_tag` LIMIT 3   [ RunTime:0.0001s ]
+SQL: SELECT `id`,`tag_type` FROM `meiui_tag`  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`tag_type`,`create_user` FROM `meiui_tag`  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`tag_type`,`create_user` FROM `meiui_tag`  [ RunTime:0.0003s ]
+SQL: UPDATE `meiui_tag` SET `id`='5',`tag_name`='good',`create_user`='8',`create_time`='1453362801',`tag_type`='6',`using_flag`='1' WHERE ( id=5 ) [ RunTime:0.0002s ]
+SQL: UPDATE `meiui_tag` SET `tag_type`='5' WHERE ( id=1 ) [ RunTime:0.0002s ]
+SQL: DELETE FROM `meiui_tag` WHERE ( id=2 ) [ RunTime:0.0002s ]
+SQL: DELETE FROM `meiui_tag` WHERE `id` IN ('1','2','5') [ RunTime:0.0002s ]
+SQL: DELETE FROM `meiui_tag` WHERE ( id=0 ) ORDER BY create_time LIMIT 5  [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001089s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001277s ]
+
+[ 2018-09-29T21:34:52+08:00 ] 127.0.0.1 /index.php/Home/Tag/tag
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000385s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000447s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000560s ]
+SQL: SHOW COLUMNS FROM `meiui_tag` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `meiui_tag` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: validate G:\ui\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto G:\ui\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [8] Undefined index: validate G:\ui\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto G:\ui\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT * FROM `meiui_tag` WHERE ( tag_type=2 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `meiui_tag` WHERE ( tag_type=2 ) ORDER BY create_time LIMIT 3   [ RunTime:0.0003s ]
+SQL: SELECT `id` FROM `meiui_tag`  [ RunTime:0.0002s ]
+SQL: SELECT `id` FROM `meiui_tag` LIMIT 3   [ RunTime:0.0001s ]
+SQL: SELECT `id`,`tag_type` FROM `meiui_tag`  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`tag_type`,`create_user` FROM `meiui_tag`  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`tag_type`,`create_user` FROM `meiui_tag`  [ RunTime:0.0003s ]
+SQL: UPDATE `meiui_tag` SET `id`='5',`tag_name`='good',`create_user`='8',`create_time`='1453362801',`tag_type`='6',`using_flag`='1' WHERE ( id=5 ) [ RunTime:0.0003s ]
+SQL: UPDATE `meiui_tag` SET `tag_type`='5' WHERE ( id=1 ) [ RunTime:0.0002s ]
+SQL: DELETE FROM `meiui_tag` WHERE ( id=2 ) [ RunTime:0.0002s ]
+SQL: DELETE FROM `meiui_tag` WHERE `id` IN ('1','2','5') [ RunTime:0.0002s ]
+SQL: DELETE FROM `meiui_tag` WHERE ( id=0 ) ORDER BY create_time LIMIT 5  [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000592s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000727s ]
+

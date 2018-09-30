@@ -10,6 +10,7 @@ use Home\Model\TagModel;
 use Think\Controller;
 class MeiuiTagController extends  Controller{
     public function getTagItem(){
+
         $tag_id = intval($_GET['tag_id']);
         if($tag_id){
             $meiui_tag = M('MeiuiTag','','DB_NEWS');

@@ -33,7 +33,7 @@ class TagController extends  Controller{
         $list= $tag->field('create_user,create_time')->create($data);//只允许这2个字段
         var_dump($list);
         $sql = $tag->fetchSql(true)->add($data);
-       // echo $sql;//显示为INSERT INTO `meiui_tag` (`id`,`tag_name`,`……) VALUES ('12','validate','……)
+       echo $sql;//显示为INSERT INTO `meiui_tag` (`id`,`tag_name`,`……) VALUES ('12','validate','……)
         // 批量添加数据
         $dataList[] = array('id'=>'15','create_user'=>'joy');
         $dataList[] = array('id'=>'20','create_user'=>'stv');
@@ -77,7 +77,9 @@ class TagController extends  Controller{
 
         //4.删除数据
         $tag->where('id=2')->delete(); // 删除id为2的用户数据
-
+        $tag->delete('1,2,5'); // 删除主键为1,2和5的用户数据
+        // 删除所有状态为0的5 个用户数据 按照创建时间排序
+        $tag->where('id=0')->order('create_time')->limit('5')->delete();
 
     }
 
