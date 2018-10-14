@@ -1,0 +1,49 @@
+[ 2018-10-14T18:15:18+08:00 ] 127.0.0.1 /index.php/Home/Search/user
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.018292s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007540s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007678s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001139s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001266s ]
+
+[ 2018-10-14T18:16:14+08:00 ] 127.0.0.1 /index.php/Home/EveryDay/getLaGouData
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001076s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003467s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004055s ]
+ERR: Think\Controller:outdata方法不存在！
+
+[ 2018-10-14T18:18:33+08:00 ] 127.0.0.1 /index.php/Home/EveryDay/getLaGouData
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000690s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000960s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001255s ]
+ERR: Think\Controller:outdata方法不存在！
+
+[ 2018-10-14T18:19:18+08:00 ] 127.0.0.1 /index.php/Home/EveryDay/getLaGouData
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000549s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000588s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000709s ]
+ERR: Think\Controller:outdata方法不存在！
+
+[ 2018-10-14T18:19:29+08:00 ] 127.0.0.1 /index.php/Home/EveryDay/getLaGouData
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000601s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000615s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000726s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001518s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001797s ]
+
