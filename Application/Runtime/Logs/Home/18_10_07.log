@@ -1,0 +1,50 @@
+[ 2018-10-07T13:13:00+08:00 ] 127.0.0.1 /index.php/Home/Search/user
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007101s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.018518s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.018660s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000913s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001094s ]
+
+[ 2018-10-07T13:14:01+08:00 ] 127.0.0.1 /index.php/Home/User/updateUserItem?nickname=yun&phone=15523645128&email=good&id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000592s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000636s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000847s ]
+SQL: SHOW COLUMNS FROM `meiui_user` [ RunTime:0.0824s ]
+SQL: UPDATE `meiui_user` SET `id`='3',`nickname`='yun',`phone`='15523645128',`email`='good' WHERE ( id=3 ) [ RunTime:0.0446s ]
+SQL: SELECT * FROM `meiui_user` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000548s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000648s ]
+
+[ 2018-10-07T13:14:11+08:00 ] 127.0.0.1 /index.php/Home/Search/user
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000482s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000611s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000748s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000574s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000690s ]
+
+[ 2018-10-07T13:14:21+08:00 ] 127.0.0.1 /index.php/Home/User/updateUserItem?nickname=yun&phone=15523645128&email=good&id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000624s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000705s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000888s ]
+SQL: SHOW COLUMNS FROM `meiui_user` [ RunTime:0.0026s ]
+SQL: UPDATE `meiui_user` SET `id`='3',`nickname`='yun',`phone`='15523645128',`email`='good' WHERE ( id=3 ) [ RunTime:0.0019s ]
+SQL: SELECT * FROM `meiui_user` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000647s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000756s ]
+

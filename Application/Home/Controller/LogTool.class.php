@@ -21,7 +21,9 @@ class LogTool extends  Controller{
         //red (33  55  80)
         $document_root=$_SERVER['DOCUMENT_ROOT'] . '/log';
         $myfile=fopen("$document_root/$pre_log" . "_error_log",'a');
+        flock($myfile,LOCK_EX);
         fwrite($myfile, $content);
+        flock($myfile,LOCK_UN);
         fclose($myfile);
     }
 }

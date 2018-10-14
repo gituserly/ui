@@ -36,8 +36,8 @@ class UserController extends Controller
             $list = $meiui_user->where("id=$id")->find();
             $this->outData($list);
         } else {
-            $this->outData('', -1, '缺少对应标签');
-            LogTool::write_log('缺少对应标签');
+            $this->outData('', -1, '缺少对应用户名和图片');
+            LogTool::write_log('缺少应用户名和图片');
         }
     }
 
