@@ -7,92 +7,114 @@
  */
 
 namespace Home\Controller;
-use Think\Controller;
-class EveryDayController extends Controller{
 
-    public function getLaGouData(){
+use Think\Controller;
+
+class EveryDayController extends Controller
+{
+
+    public function getLaGouData()
+    {
         header("Content-type:text/html;charset=utf-8");
         $array_data = array(
             'header' => array(
                 'user_name' => '廖耘',
                 'user_edu' => '西南科技大学 / 本科 / 应届毕业生',
-                'user_phone'=>'18308462575',
+                'user_phone' => '18308462575',
                 'user_age' => '23',
-                'user_email'=>'1291829902@qq.com',
+                'user_email' => '1291829902@qq.com',
             ),
-            'to introduce myself' => array(
-                'user_tag' => array('个人能力','执行力','抗压能力','适应能力','责任心'),
-                'self description'=>'路子野，就是莽，自学能力强。不怕碰到问题，善于解决问题提高自己',
+            'toIntroduceMyself' => array(
+                'user_tag' => array('个人能力', '执行力', '抗压能力', '适应能力', '责任心'),
+                'self description' => '路子野，就是莽，自学能力强。不怕碰到问题，善于解决问题提高自己',
             ),
-            'education experience'=>array(
-               'content'=> '西南科技大学/本科 /动物科学','time'=>'2014-2018',
+            'education_experience' => array(
+                'content' => '西南科技大学/本科 /动物科学', '
+                time' => '2014-2018',
             ),
-            'work experience'=>array(
-                'the internship units'=>'麻乌科技/后端开发－实习',
-                'self description'=>'学校学长推荐，一起开发app,开发美UIapp，后端接口功能',
-                'time'=>'2017.11-2018-4',
+            'work experience' => array(
+                'the internship units' => '麻乌科技/后端开发－实习',
+                'self description' => '学校学长推荐，一起开发app,开发美UIapp，后端接口功能',
+                'time' => '2017.11-2018-4',
             ),
-            'experience in project'=>array('name'=>'美ui','content'=>'使用wamp开发接口,用简化的thinkPHP框架开发,
+            'experience in project' => array('name' => '美ui',
+                'content' => '使用wamp开发接口,用简化的thinkPHP框架开发,
             使用git 进行版本,开发首页推荐列表功能（redis sort list 处理）,
-            开发标签的正常增删改查,处理日志分文件存储','time'=>'2017.12-2018.4',
-            'social home page'=>''
+            开发标签的正常增删改查,处理日志分文件存储',
+                'time' => '2017.12-2018.4',
+                'social home page' => ''
             ),
         );
 
 
-        $json_data = json_encode($array_data);
-        var_dump($json_data);
-      //  $this->outdata();
+       // $json_data = json_encode($array_data);
+       // echo $json_data;
+
+        $this->outdata($array_data);
     }
 
+    public function getJingDongChaoShiData()
+    {
+        header("Content-type:text/html;charset=utf-8");
+        $array_data=array(
+            'Food and beverage'=>array(
+               '进口食品'=>array(
+                   '休闲零食','饼干蛋糕','橄榄油','坚果蜜饯',
+                   '糖果/巧克力','进口牛奶','方便食品','饮料冲调'
+               ),
+             '休闲食品'=>array(
+                 '进口食品','猪肉脯','薯片/膨化','鸭脖',
+                 '海苔','牛肉干','果蔬干','果冻','辣条'
+             ),
+            '蛋糕饼干'=>array(
+                '进口饼干','曲奇','面包','蛋糕','饼干'
+            ,'派','蛋卷','威化','肉松饼'
+            ),
+                '坚果炒货'=>array(
+                    '瓜子','核桃','夏威夷果','松子'
+                ,'开心果','碧根果','腰果','巴旦木','花生'
+                ),
+                '蜜饯果干'=>array(
+                    '枣夹核桃','枣','葡萄干','芒果干','梅',
+                    '山楂','枸杞','蔓越莓干','栗子','薯/芋头类'
+                ),
+                '糖果/巧克力'=>array(
+                    '进口巧克力','巧克力','口香糖',
+                    '棒棒糖','喜糖','糖','润喉糖','黑巧克力'
+                ),
+                '牛奶'=>array(
+                    '进口牛奶','牛奶乳品','酸奶','风味奶',
+                    '儿童奶','鲜奶','成人奶粉','乳酸饮料'
+                ),
+                '茗茶'=>array(
+                    '铁观音','乌龙茶','龙井','普洱','红茶',
+                    '绿茶','白茶','黑茶','养生茶','花果茶','花草茶'
+                ),
+                '饮料/水'=>array(
+                    '饮用水','碳酸水','中草药饮料','功能类',
+                    '运动类','茶饮','蛋白质类','果蔬类','果味类'
+                ),
+                '营养冲调'=>array(
+                    '麦片','咖啡','奶茶','蜂蜜',
+                    '蜂产品','柚子茶','营养奶粉','谷粉豆浆'
+                ),
+            ),
+            'Grain and oil fushi'=>array(
+                '食用油','米面','厨房调味'
+            ),
+            'Personal care'=>array(),
+            '护肤美妆'=>array(),
+            '家居清洁'=>array(),
+            '母婴用品'=>array(),
+            '中外名酒'=>array(),
+            '京东生鲜'=>array(),
+            '居家生活'=>array(),
+        );
+        $this->outdata($array_data);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    }
+    public  static function  outdata($content){
+    $out_data=array('data'=>$content);
+        echo json_encode($out_data);
+    }
 }
