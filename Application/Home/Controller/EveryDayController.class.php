@@ -32,17 +32,17 @@ class EveryDayController extends Controller
                 'content' => '西南科技大学/本科 /动物科学', '
                 time' => '2014-2018',
             ),
-            'work experience' => array(
+            'work_experience' => array(
                 'the internship units' => '麻乌科技/后端开发－实习',
                 'self description' => '学校学长推荐，一起开发app,开发美UIapp，后端接口功能',
                 'time' => '2017.11-2018-4',
             ),
-            'experience in project' => array('name' => '美ui',
+            'experience_in_project' => array('name' => '美ui',
                 'content' => '使用wamp开发接口,用简化的thinkPHP框架开发,
             使用git 进行版本,开发首页推荐列表功能（redis sort list 处理）,
             开发标签的正常增删改查,处理日志分文件存储',
                 'time' => '2017.12-2018.4',
-                'social home page' => ''
+                'social_home_page' => ''
             ),
         );
 
@@ -57,7 +57,7 @@ class EveryDayController extends Controller
     {
         header("Content-type:text/html;charset=utf-8");
         $array_data=array(
-            'Food and beverage'=>array(
+            'Food_and_beverage'=>array(
                '进口食品'=>array(
                    '休闲零食','饼干蛋糕','橄榄油','坚果蜜饯',
                    '糖果/巧克力','进口牛奶','方便食品','饮料冲调'
@@ -99,19 +99,31 @@ class EveryDayController extends Controller
                     '蜂产品','柚子茶','营养奶粉','谷粉豆浆'
                 ),
             ),
-            'Grain and oil fushi'=>array(
-                '食用油','米面','厨房调味'
-            ),
-            'Personal care'=>array(),
-            '护肤美妆'=>array(),
-            '家居清洁'=>array(),
-            '母婴用品'=>array(),
-            '中外名酒'=>array(),
-            '京东生鲜'=>array(),
-            '居家生活'=>array(),
+
         );
         $this->outdata($array_data);
 
+    }
+    public  function get2345YinShiData(){
+        header("Content-type:text/html;charset=utf-8");
+        $yinshi_data=array(
+            'The_movie_to_find'=>array(
+                'type'=>array('爱情','喜剧','恐怖','科幻','剧情',),
+                'place'=>array('大陆','香港','台湾','韩国','日本',),
+                'year'=>array('2017','2016','2015','2014')
+            ),
+            'TV_hit_list'=>array(
+                '01'=>'HBO 2018预告片合集',
+                '02'=>'降龙之白露为霜',
+                '03'=>'胜利之路',
+                '04'=>'我在北京等你',
+                '05'=>'唐诗三百案',
+                '06'=>'战犯',
+                '07'=>'一代名相陈廷敬',
+                '08'=>'初代吸血鬼第4季',
+            )
+        );
+        $this->outdata($yinshi_data);
     }
     public  static function  outdata($content){
     $out_data=array('data'=>$content);

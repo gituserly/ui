@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0019da6d-c416-4f2f-ad5d-c9f713da0a79" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Home/Controller/EveryDayController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/Controller/EveryDayController.class.php" afterPath="$PROJECT_DIR$/Application/Home/Controller/EveryDayController.class.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ui.iws" />
@@ -32,7 +32,7 @@
       <file leaf-file-name="UserController.class.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Application/Home/Controller/UserController.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="14" selection-start="857" selection-end="857" vertical-scroll-proportion="-21.538462" vertical-offset="0" max-vertical-offset="3720">
+            <state line="33" column="14" selection-start="857" selection-end="857" vertical-scroll-proportion="0.0" vertical-offset="990" max-vertical-offset="3870">
               <folding />
             </state>
           </provider>
@@ -41,7 +41,7 @@
       <file leaf-file-name="MeiuiTagController.class.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Application/Home/Controller/MeiuiTagController.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="64" column="42" selection-start="1956" selection-end="1956" vertical-scroll-proportion="-24.692308" vertical-offset="777" max-vertical-offset="3150">
+            <state line="64" column="42" selection-start="1956" selection-end="1956" vertical-scroll-proportion="0.0" vertical-offset="1920" max-vertical-offset="3330">
               <folding />
             </state>
           </provider>
@@ -50,7 +50,7 @@
       <file leaf-file-name="EveryDayController.class.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Application/Home/Controller/EveryDayController.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="0" selection-start="1403" selection-end="1403" vertical-scroll-proportion="0.49822065" vertical-offset="810" max-vertical-offset="3090">
+            <state line="10" column="21" selection-start="146" selection-end="146" vertical-scroll-proportion="0.17793594" vertical-offset="150" max-vertical-offset="4110">
               <folding>
                 <element signature="e#6#95#0" expanded="true" />
               </folding>
@@ -114,6 +114,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -232,7 +233,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -304,11 +304,11 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -337,6 +337,52 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Application/Home/Controller/UserController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="14" selection-start="857" selection-end="857" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3870">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/Controller/MeiuiTagController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="64" column="42" selection-start="1956" selection-end="1956" vertical-scroll-proportion="0.0" vertical-offset="1920" max-vertical-offset="3330">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/Controller/EveryDayController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="100" column="14" selection-start="3201" selection-end="3201" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="4110">
+          <folding>
+            <element signature="e#6#95#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/Controller/UserController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="14" selection-start="857" selection-end="857" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3870">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/Controller/MeiuiTagController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="64" column="42" selection-start="1956" selection-end="1956" vertical-scroll-proportion="0.0" vertical-offset="1920" max-vertical-offset="3330">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/Controller/EveryDayController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="0" selection-start="1296" selection-end="1296" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="3750">
+          <folding>
+            <element signature="e#6#95#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Application/Home/Controller/UserController.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="33" column="14" selection-start="857" selection-end="857" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3870">
@@ -537,9 +583,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Application/Home/Controller/LogTool.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="1" selection-start="725" selection-end="725" vertical-scroll-proportion="-17.0" vertical-offset="27" max-vertical-offset="870">
-          <folding />
-        </state>
+        <state line="28" column="1" selection-start="725" selection-end="725" vertical-scroll-proportion="-17.0" vertical-offset="27" max-vertical-offset="870" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Application/Home/Controller/TagController.class.php">
@@ -549,21 +593,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Application/Home/Controller/UserController.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="14" selection-start="857" selection-end="857" vertical-scroll-proportion="-21.538462" vertical-offset="0" max-vertical-offset="3720">
+        <state line="33" column="14" selection-start="857" selection-end="857" vertical-scroll-proportion="0.0" vertical-offset="990" max-vertical-offset="3870">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Application/Home/Controller/MeiuiTagController.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="42" selection-start="1956" selection-end="1956" vertical-scroll-proportion="-24.692308" vertical-offset="777" max-vertical-offset="3150">
+        <state line="64" column="42" selection-start="1956" selection-end="1956" vertical-scroll-proportion="0.0" vertical-offset="1920" max-vertical-offset="3330">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Application/Home/Controller/EveryDayController.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="0" selection-start="1403" selection-end="1403" vertical-scroll-proportion="0.49822065" vertical-offset="810" max-vertical-offset="3090">
+        <state line="10" column="21" selection-start="146" selection-end="146" vertical-scroll-proportion="0.17793594" vertical-offset="150" max-vertical-offset="4110">
           <folding>
             <element signature="e#6#95#0" expanded="true" />
           </folding>
