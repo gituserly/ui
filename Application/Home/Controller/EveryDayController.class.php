@@ -131,8 +131,8 @@ class EveryDayController extends Controller
     public function  getBOSSzhipinPHPhouduanData()
     {
         $array_data = array(
-            'Hot_job' => array(
-                'first' => array(
+            'hot_job' => array(
+                array(
                     'left_content' => array(
                         'work' => 'PHP后端',
                         'salary' => '6k-12k',
@@ -153,7 +153,7 @@ class EveryDayController extends Controller
                         'img' => 'https://img2.bosszhipin.com/boss/avatar/avatar_6.png?x-oss-process=image/resize,w_100,limit_0',
                     )
                 ),
-                'second' => array(
+                array(
                     'left_content' => array(
                         'work' => 'PHP后端开发',
                         'salary' => '4k-6k',
@@ -176,8 +176,8 @@ class EveryDayController extends Controller
                 )
 
             ),
-            'The_latest_job' => array(
-                'first' => array(
+            'the_latest_job' => array(
+                array(
                     'left_content' => array(
                         'work' => 'PHP后端开发',
                         'salary' => '8k-10k',
@@ -199,6 +199,48 @@ class EveryDayController extends Controller
                     )
                 )
             )
+        );
+        $app = array(
+            array('page_all', 'page_content'),
+            array('user_name')
+        );
+        $this->outdata($array_data);
+    }
+
+    public function getSouHuXinWenData()
+    {
+        $array_data = array(
+            array('首页' => array(
+                'left_content' => array(
+                    array('别抢了！货车发生事故，家长带孩子现场哄抢橘子',
+                        'img1' => 'http://29e5534ea20a8.cdn.sohucs.com/c_fill,w_320,h_213,g_faces/c_cut,x_0,y_143,w_600,h_399/os/news/a6749d7cb23dcf97272e1fdf502240f3.jpg'),
+                    array('老外爬颐和园围墙拍照 瓦片踩落一地',
+                        'img2' => 'http://29e5534ea20a8.cdn.sohucs.com/c_fill,w_155,h_103,g_faces/c_cut,x_0,y_96,w_227,h_151/os/news/272f883a48053d03522410798be2094d.jpg'),
+                    array('这家人把骗子当取款机：1笔进账36万 赃款全被截胡',
+                        'img3' => 'http://29e5534ea20a8.cdn.sohucs.com/c_fill,w_155,h_103,g_faces/c_cut,x_0,y_73,w_550,h_366/os/news/673db50492f61a3ebbf2237d0defd4fd.jpg')
+                ),
+                'middle_content' => array(
+                    '习近平的足迹 | 回望十九大：服务人民 胸怀世界',
+                    '高举伟大旗帜，不负人民重托 | 开创中国特色社会主义的光辉时代',
+                    '刘鹤：不存在国进民退问题 政府高度重视股市稳定发展',
+                    '副总理一行三会掌门信心喊话 A股大反攻创业板涨逾3%',
+                    '地方国资主动驰援上市民企：今年已入股29家 非统一部署',
+                    array('', '一日内五名＂老虎＂案有进展 中纪委公布两人被处分现场视频'),
+                    '成品油价格年内第13次上调 多地油价进入“8元时代”',
+                ),
+                'right_content' => array(
+                    '搜狐精选' => array(
+                        array('与“钻石”同行的探险家 海外试驾劳斯莱斯首款SUV',
+                            'img' => 'http://5b0988e595225.cdn.sohucs.com/images/20181019/19661a86ba8f41bc82e867eabd702dde.jpeg'),
+                        '黄刚：V2X是智能网联汽车发展的核心技术之一',
+                        '曝国米冬窗补强瞄准巴萨失意飞翼 阿森纳欲截胡',
+                        '三主力缺席影响卡帅排兵 高拉特能否伤愈仍未知',
+                        '赵薇遭股民索赔新进展：两度申请管辖权异议被法院驳回，面临31起诉讼',
+                    )
+                )
+            ),
+                '时政', '国际', '军事', '警法', '社会', '公益',
+                '无人机', '狐度', '数字之道', '知世', '神吐槽',)
         );
         $this->outdata($array_data);
     }
