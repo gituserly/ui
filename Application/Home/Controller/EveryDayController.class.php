@@ -209,7 +209,7 @@ class EveryDayController extends Controller
 
     public function getSouHuXinWenData()
     {
-
+        header("Content-type:text/html;charset=utf-8");
         $array_data = array(
             'header_type' => array(
                 array(
@@ -263,18 +263,28 @@ class EveryDayController extends Controller
 
     }
 
+    /**
+     *
+     * 获取 音乐 列表 数据
+     *
+     * */
     public function getMusic()
     {
         $array_data = array(
             'new_range' => array(
-                '01' => array('song' => '往后余生', 'singer' => '马良/孙茜茹'),
+                '01' => array(
+                    'song' => '往后余生',
+                    'singer' => '马良/孙茜茹',
+                    'song_id' => '155642',
+                    'song_url' => 'http://xinlang.com/song/1532.mp3',
+                ),
                 '02' => array('终于等到你', 'singer' => '张信哲'),
                 '03' => array('等光', 'singer' => '孙怡'),
                 '04' => array('如河', 'singer' => '张韶涵'),
                 '05' => array('找到你（电影..', 'singer' => '李剑青'),
                 '06' => array('youthful beau..', 'singer' => '内田真礼'),
                 '07' => array('影（电影《影..', 'singer' => '谭维维/梁博'),
-                '08' => array('给自己的情书', 'singer' => '陈洁仪'),
+                '08' => array('给自己的情书', 'singer' => ''),
                 '09' => array('无虑（北镇文..', 'singer' => '刘珂矣'),
                 '10' => array('多爱一天', 'singer' => '萱萱'),
             ),
@@ -289,6 +299,89 @@ class EveryDayController extends Controller
                 '08' => array('演员', '薛之谦'),
                 '09' => array('红颜旧', '崔子格'),
                 '10' => array('寂寞的人伤心..', '龙梅子/杨..'),
+            )
+        );
+        $this->outdata($array_data);
+    }
+
+    /**
+     * 获取music_information表中的数据信息
+     *
+     *
+     */
+    public function getmusic_information(){
+        header("Content-type:text/html;charset=utf-8");
+        $connection = array(
+            'db_type'  => 'mysql',
+            'db_user'  => 'root',
+            'db_pwd'   => '',
+            'db_host'  => 'localhost',
+            'db_port'  => '3306',
+            'db_name'  => 'music',
+            'db_charset' =>    'utf8',);
+        $music=M('music_information','',$connection);
+        $list1=$music->where('song_id=1')->find();
+        $list2=$music->where('song_id=2')->find();
+        $list3=$music->where('song_id=3')->find();
+        $list4=$music->where('song_id=4')->find();
+        $list5=$music->where('song_id=5')->find();
+        $list6=$music->where('song_id=6')->find();
+        $list7=$music->where('song_id=7')->find();
+        $list8=$music->where('song_id=8')->find();
+        $list9=$music->where('song_id=9')->find();
+        $list10=$music->where('song_id=10')->find();
+        $array_data = array(
+            'new_range' => array(
+                '01' => array(
+                    'song' => $list1['song'],
+                    'singer' => $list1['singer'],
+                    'song_id' => $list1['song_id'],
+                    'song_url' => $list1['song_url']),
+                '02' => array(
+                    'song' => $list2['song'],
+                    'singer' => $list2['singer'],
+                    'song_id' => $list2['song_id'],
+                    'song_url' => $list2['song_url']),
+                '03' => array(
+                    'song' => $list3['song'],
+                    'singer' => $list3['singer'],
+                    'song_id' => $list3['song_id'],
+                    'song_url' => $list3['song_url']),
+                '04' => array(
+                    'song' => $list4['song'],
+                    'singer' => $list4['singer'],
+                    'song_id' => $list4['song_id'],
+                    'song_url' => $list4['song_url']),
+                '05' => array(
+                    'song' => $list5['song'],
+                    'singer' => $list5['singer'],
+                    'song_id' => $list5['song_id'],
+                    'song_url' => $list5['song_url']),
+                '06' => array(
+                    'song' => $list6['song'],
+                    'singer' => $list6['singer'],
+                    'song_id' => $list6['song_id'],
+                    'song_url' => $list6['song_url']),
+                '07' => array(
+                    'song' => $list7['song'],
+                    'singer' => $list7['singer'],
+                    'song_id' => $list7['song_id'],
+                    'song_url' => $list7['song_url']),
+                '08' => array(
+                    'song' => $list8['song'],
+                    'singer' => $list8['singer'],
+                    'song_id' => $list8['song_id'],
+                    'song_url' => $list8['song_url']),
+                '09' =>array(
+                    'song' => $list9['song'],
+                    'singer' => $list9['singer'],
+                    'song_id' => $list9['song_id'],
+                    'song_url' => $list9['song_url']),
+                '10' => array(
+                    'song' => $list10['song'],
+                    'singer' => $list10['singer'],
+                    'song_id' => $list10['song_id'],
+                    'song_url' => $list10['song_url']),
             )
         );
         $this->outdata($array_data);
